@@ -53,12 +53,12 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: brown;
+    background: var(--black);
     border-radius: var(--largeLenght3);
 }
 
 body{
-    background: brown;
+    background: var(--white);
 }
 
 section{
@@ -70,7 +70,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: var(--largeLenght1) 7%;
-    border-bottom: var(--smallLenght1) solid rgb(255,255,255,.3);
+    border-bottom: var(--smallLenght1) solid var(--brown);
     position: fixed;
     top: 0;
     right: 0;
@@ -334,6 +334,7 @@ header .shop-container .btn{
         right: 2rem;
     }
 
+/* Home section    */
     .home{
         background-position: left;
         justify-content: center;
@@ -351,6 +352,57 @@ header .shop-container .btn{
     }
 
 }
+/* ----------------- */
+
+/* About section */
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    padding-bottom: var(--largeLenght3);
+    font-size: var(--largeLenght3);
+}
+
+.heading span{
+    color: var(--brown);
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: var(--largeLenght1);
+}
+
+.about .row .content h3{
+    font-size: var(--largeLenght2);
+    color: var(--black);
+}
+
+.about .row .content p{
+    font-size: var(--largeLenght1);
+    color: var(--labelColor);
+    padding: var(--mediumLenght1) 0;
+    line-height: 1.8;
+}
+
+
+/* ----------------- */
 
 @media (max-width:450px){
 
