@@ -34,7 +34,7 @@
     border: none;
     text-decoration: none;
     /* text-transform: capitalize;*/
-    transition: .2s linear;
+    transition: .1s linear;
 }
 
 html{
@@ -66,12 +66,11 @@ section{
 }
 
  /* Navbar section */
+
 header{
-    background: var(--white);
     display: flex;
     justify-content: space-between;
     padding: var(--largeLenght1) 7%;
-    border-bottom: var(--smallLenght1) solid var(--brown);
     position: fixed;
     top: 0;
     right: 0;
@@ -79,8 +78,14 @@ header{
     z-index: 1000;
 }
 
-header .logo img{
-    height: var(--largeLenght5);
+header.sticky{
+    background: var(--white);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+header .logo p{
+    color: var(--black);
+    font-size: var(--largeLenght2);
 }
 
 nav{
@@ -102,7 +107,6 @@ nav a:hover{
 
 header .icons{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -216,7 +220,7 @@ header .shop-container .shop-item .content .price{
     padding: var(--mediumLenght1) var(--largeLenght2);
     font-size: var(--largeLenght1);
     color: var(--white);
-    background: var(--brown);
+    background: var(--blue);
     cursor: pointer;
 }
 
@@ -277,12 +281,12 @@ header .shop-container .btn{
     text-align: center;
     color: var(--black);
     text-transform: uppercase;
-    padding-bottom: var(--largeLenght3);
+    padding: var(--largeLenght3);
     font-size: var(--largeLenght3);
 }
 
 .heading span{
-    color: var(--brown);
+    color: var(--green);
     text-transform: uppercase;
 }
 
@@ -291,6 +295,7 @@ header .shop-container .btn{
     align-items: center;
     background: var(--white);
     flex-wrap: wrap;
+    background-color: #fff;
 }
 
 .about .row .image{
@@ -333,14 +338,15 @@ header .shop-container .btn{
     align-items: center;
     background-color: var(--white);
     flex-wrap: wrap;
+    background: white;
 }
 .blogs .blogs-row .box .img{
-    flex: 1 1 45rem;
+    flex: 1 1 25rem;
 }
 .blogs .blogs-row .box .img img{
-    width: 100%;
-    height: 600px;
-    border-radius: 0.5rem;
+    width: 80%;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .blogs .blogs-row .box .content{
@@ -367,7 +373,6 @@ header .shop-container .btn{
 }
 .blogs .blogs-row .box .content a:hover{
     color: var(--black);
-    text-shadow: var(--box-shadow);
 }
 
 /* ----------------- */
@@ -443,14 +448,15 @@ header .shop-container .btn{
 
 swiper-container {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 swiper-slide {
-    width: 35rem !important;
-    height: 30rem;
+    width: 30rem !important;
     padding: var(--largeLenght2) var(--largeLenght1);
     text-align: center;
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--black);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: center;
@@ -489,6 +495,58 @@ swiper-slide .swiper-button-prev{
 
 /* ----------------- */
 
+
+/* Contact section */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    gap: var(--mediumLenght1);
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: var(--largeLenght4) var(--largeLenght1);
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: var(--largeLenght3);
+    color: var(--black);
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: var(--largeLenght1);
+    margin-bottom: var(--largeLenght1);
+    background-color: var(--white);
+}
+
+.contact .row form .inputBox span{
+    color: var(--black);
+    font-size: var(--largeLenght1);
+    padding-left: var(--largeLenght1);
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: var(--largeLenght1);
+    font-size: var(--largeLenght1);
+    color: var(--black);
+    text-transform: none;
+    background: none;
+}
+
+/* ----------------- */
 
 
 /* Media  */

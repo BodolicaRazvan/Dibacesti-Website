@@ -37,10 +37,6 @@ var swiper = new Swiper(".blogs-row", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation:{
-        nextE1 :".swiper-button-next",
-        prevE1 :".swiper-button-prev",
-    },
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -55,23 +51,34 @@ var swiper = new Swiper(".blogs-row", {
   });
 
 
-  const swiperEl = document.querySelector('swiper-container')
-  Object.assign(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
-      },
-    },
+  // const swiperEl = document.querySelector('swiper-container')
+  // Object.assign(swiperEl, {
+  //   slidesPerView: 1,
+  //   spaceBetween: 20,
+  //   // centeredSlides:true,
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //     },
+  //     640: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 20,
+  //     },
+  //     768: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 20,
+  //     },
+  //     1024: {
+  //       slidesPerView: 5,
+  //       spaceBetween: 20,
+  //     },
+  //   },
+  // });
+  // swiperEl.initialize();
+
+  const header = document.querySelector("header")
+
+  window.addEventListener("scroll", function(){
+    header.classList.toggle("sticky", window.scrollY >0)
   });
-  swiperEl.initialize();
