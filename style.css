@@ -568,10 +568,6 @@ header .shop-container .btn{
 
 /* instagram Section */
 
-
-
-
-/* ----------------- */
 .media  {
     display: flex;
     flex-direction: column;
@@ -598,13 +594,6 @@ header .shop-container .btn{
 
 .media .swiper-slide-active{
     filter: blur(0px);
-}
-
-.cardSocial {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .card{
@@ -770,14 +759,73 @@ header .shop-container .btn{
     color: #777;
 }
 
+/* ----------------- */
+
+
+/* Footer Section */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: var(--mediumLenght3);
+    background: #fff;
+    font-size: 20px;
+}
+
+.footer .footer-box p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .social-icons{
+    display: flex;
+    align-items: center;
+    column-gap: var(--smallLenght2);
+}
+
+.footer .social-icons a:hover{
+    background-color: var(--brown);
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer .footer-box .contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--smallLenght2);
+}
+
+.footer .footer-box .contact span{
+    margin-right: var(--mediumLenght1);
+}
+
+.footer li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0px;
+    
+}
+
+.footer li:hover{
+    color: var(--brown);
+    border-bottom: .1rem solid var(--brown);
+    padding-bottom: var(--smallLenght2);
+}
 
 
 
 
-
-
-
-
+/* ----------------- */
 
 
 
