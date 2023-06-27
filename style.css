@@ -828,9 +828,13 @@ header .shop-container .btn{
 /* ----------------- */
 
 
+/* Aniamtion */
 
+.animate__animated.animate__slideInDown {
+    --animate-duration: 3s;
+  }
 
-
+/* ----------------- */
 
 
 
