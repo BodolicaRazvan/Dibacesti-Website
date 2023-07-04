@@ -67,7 +67,7 @@ var swiper1 = new Swiper(".blogs-row", {
 
 
 
-//Swiper meniu
+//Swiper reviews
 
 var swiper2 = new Swiper(".review-swiper", {
   slidesPerView: 5,
@@ -192,3 +192,8 @@ sr.reveal('.swiper-media', { origin: 'top'});
 
 sr.reveal('.footer', { origin: 'bottom'});
 //----------------
+
+// localStorage for accordion
+function saveID(event){
+    localStorage.setItem("lastname", event);
+}
