@@ -62,7 +62,7 @@ body{
 }
 
 section{
-    padding: var(--largeLenght1) 7%;
+    padding: var(--largeLenght3) 7%;
 }
 
  /* Navbar section */
@@ -81,6 +81,7 @@ header{
 header.sticky{
     background: var(--white);
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    border-radius: 0.5rem;
 }
 
 header .logo p{
@@ -220,7 +221,7 @@ header .shop-container .shop-item .content .price{
     padding: var(--mediumLenght1) var(--largeLenght2);
     font-size: var(--largeLenght1);
     color: var(--white);
-    background: var(--blue);
+    background: var(--brown);
     cursor: pointer;
 }
 
@@ -278,26 +279,27 @@ header .shop-container .btn{
 
 /* About section */
 
+.about{
+    margin-top: 20px;
+}
+
 .heading{
     text-align: center;
     color: var(--black);
     text-transform: uppercase;
-    padding: var(--largeLenght3);
-    font-size: var(--largeLenght3);
+    padding: var(--largeLenght3) 0;
+    font-size: var(--largeLenght2);
 }
 
 .heading span{
-    color: var(--green);
+    color: var(--brown);
     text-transform: uppercase;
 }
 
 .about .row{
     display: flex;
     align-items: center;
-    background: var(--white);
     flex-wrap: wrap;
-    background-color: #fff;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .about .row .image{
@@ -305,10 +307,10 @@ header .shop-container .btn{
 }
 
 .about .row .image img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 0.5rem;
-
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .about .row .content{
@@ -335,24 +337,20 @@ header .shop-container .btn{
 
 /* Meinu section */
 
-.blogs .blogs-row{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
 .blogs  .blogs-row .box {
     display: flex;
     align-items: center;
-    background-color: var(--white);
     flex-wrap: wrap;
-    background: white;  
 }
 
 .blogs .blogs-row .box .img{
-    flex: 1 1 25rem;
+    flex: 1 1 0rem;
 }
 
 .blogs .blogs-row .box .img img{
-    width: 80%;
+    max-width: 100%;
+    height: auto;
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -372,7 +370,6 @@ header .shop-container .btn{
     color: var(--labelColor);
     padding: var(--mediumLenght1) 0;
     line-height: 1.8;
-    
 }
 
 .blogs .blogs-row .box .content a{
@@ -396,7 +393,8 @@ header .shop-container .btn{
 .products .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: var(--mediumLenght3);
+    gap: var(--largeLenght2);
+    /* gap: var(--mediumLenght3); */
 }
 
 .products .box-container .box{
@@ -518,7 +516,6 @@ header .shop-container .btn{
     display: flex;
     flex-wrap: wrap;
     background: #fff;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     gap: var(--mediumLenght1);
 }
 
@@ -536,7 +533,7 @@ header .shop-container .btn{
 
 .contact .row form h3{
     text-transform: uppercase;
-    font-size: var(--largeLenght3);
+    font-size: var(--largeLenght1);
     color: var(--black);
 }
 
@@ -788,15 +785,13 @@ header .shop-container .btn{
 }
 
 .footer a{
-    text-decoration: none;
-    color: var(--black);
     padding: 10px;
     margin-bottom: 10px;
 }
 
 .footer .footer-box h3{
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer .footer-box .contact{
@@ -855,6 +850,7 @@ header .shop-container .btn{
 
     html{
         font-size: 50%;
+        width: 100%;
     }
 
     .card{
@@ -903,13 +899,24 @@ header .shop-container .btn{
 
     .home .content h3{
         font-size: var(--largeLenght3);
-        color: var(--white);
     }
 
     .home .content p{
         font-size: var(--largeLenght1);
-        color: var(--white);
     }
+
+    .blogs .blogs-row .box .img img{
+        display: none;
+    }
+
+    .blogs .swiper-pagination-bullet{
+        display: none;
+    }
+
+    .about .row .image img{
+        display: none;
+    }
+
 
 }
 
@@ -929,3 +936,14 @@ header .shop-container .btn{
 
 }
 
+@media (max-width:1280px){
+
+    .about .row .image img{
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .blogs .blogs-row .box .img img{
+        border-radius: 0;
+    }
+
+}
