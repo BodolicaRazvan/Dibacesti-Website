@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    test = localStorage.getItem("lastname");
+    test = localStorage.getItem("name");
     if(test == 'terms'){
                 accordionItemHeaders[2].classList.toggle("active");
                 const accordionItemBody = accordionItemHeaders[2].nextElementSibling;
@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
   });
 
 function activeAccordion(event){
-    localStorage.setItem("lastname", event);
+    localStorage.setItem("name", event);
 }
 
 // Accordion

@@ -1,3 +1,25 @@
 .inside{
+    margin-top: 70px;
     height: 100vh;
 }
+
+h1{
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 3rem;
+}
+
+.us{
+    max-width: 1300px;
+    margin: 2rem auto;
+    background: #fff;
+}
+
+.us p{
+    font-size: 20px;
+}
+
+.animate__animated.animate__slideInDown {
+    --animate-duration: 2s;
+  }
+  

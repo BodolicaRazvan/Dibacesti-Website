@@ -1,0 +1,4 @@
+var typed = new Typed('.auto-type', {
+  strings: ['^2500 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident temporibus sed eveniet? Debitis dolore animi doloremque voluptas officiis modi! Natus vel sint alias est a exercitationem modi ea dolor aspernatur! Libero quisquam officia modi assumenda pariatur voluptas voluptatum natus! Quasi suscipit iste porro, delectus id maxime eaque molestiae consectetur, reprehenderit officiis officia. Vel incidunt voluptas eos expedita iste quia voluptatum perferendis eaque ullam animi deserunt, ut, molestias obcaecati cupiditate eum, impedit eveniet? Natus, voluptatibus officiis. Beatae facilis neque asperiores pariatur. Sit fugit consequuntur excepturi aperiam, nam optio? Eius aperiam odio dolores error, laudantium sunt iste debitis aut dignissimos! Inventore, deserunt.'],
+  typeSpeed: 2,
+});

@@ -30,7 +30,7 @@
 
 <header class="sticky">
 
-    <a href="#" class="logo">
+    <a href="../index.html" class="logo">
         <p>Dibăceşti</p>
     </a>
 
@@ -94,7 +94,13 @@
 
 </header>
 
-<section class="inside">
+<section class="inside animate__animated animate__slideInDown">
+
+    <h1>Despre noi</h1>
+
+    <div class="us">
+        <p class="auto-type"></p>
+    </div>
 
 </section>
 
@@ -111,9 +117,9 @@
     </div>
     <div class="footer-box">
         <h3>Suport</h3>
-        <li><a href="payments-methods.html">Modalitati de plata</a></li>
-        <li><a href="return-policy.html">Politica de retur</a></li>
-        <li><a href="terms-conditions.html">Termenii si conditii</a></li>
+        <li><a  id="payments" onclick="saveID(this.id)" href="support.html">Modalitati de plata</a></li>
+        <li><a  id="return" onclick="saveID(this.id)" href="support.html">Politica de retur</a></li>
+        <li><a  id="terms" onclick="saveID(this.id)" href="support.html">Termenii si conditii</a></li>
     </div>
 
     <div class="footer-box">
@@ -131,8 +137,14 @@
 
 </body>
 
+<!-- Type Animation -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- ------------ -->
+
 <!--My JavaScripts -->
-<script src="../script.js"></script>
+<script src="../scripts/script-for-support/accordion-id.js"></script>
+<script src="../scripts//scripts-for-about/type-animation.js"></script>
+<script src="../scripts//scripts-for-about/reveal-about.js"></script>
 <!-- ------------ -->
 
 </html>

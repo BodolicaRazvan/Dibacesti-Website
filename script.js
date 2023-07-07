@@ -190,10 +190,5 @@ sr.reveal('.form-contact', { origin: 'right'});
 sr.reveal('.heading-media', { origin: 'top'});
 sr.reveal('.swiper-media', { origin: 'top'});
 
-sr.reveal('.footer', { origin: 'bottom'});
+sr.reveal('.footer', { origin: 'left'});
 //----------------
-
-// localStorage for accordion
-function saveID(event){
-    localStorage.setItem("lastname", event);
-}
