@@ -1,4 +1,141 @@
 .inside{
-  height: 100vh;
+  margin-top: 70px;
+  height: auto;
 }
 
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#search-container {
+  margin: 1em 0;
+  text-align: center;
+}
+
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+  border-bottom-color: var(--brown);
+}
+
+#search-container button{
+  border: 1px solid black;
+  color: black;
+  padding: 1em 2em;
+  margin-left: 1em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+#search-container button:hover{
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+#buttons{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button-value {
+  border: 1px solid var(--black);
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.button-value:hover{
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.active {
+  background-color: var(--brown);
+  color: #ffffff;
+}
+
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: var(--largeLenght2);
+}
+
+.box{
+ text-align: center;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+ padding: var(--largeLenght1);
+}
+
+.icons a{
+  height: var(--largeLenght4);
+  width: var(--largeLenght4);
+  line-height: var(--largeLenght4);
+  font-size: var(--largeLenght1);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: var(--black);
+  margin: .3rem;
+}
+
+.icons a:hover{
+  background-color:var(--brown);
+}
+
+.image{
+  padding: var(--largeLenght1) 0;
+}
+
+.image img{
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+
+.content h3{
+  color: var(--black);
+  font-size: var(--largeLenght1);
+}
+
+.stars{
+  padding: var(--mediumLenght3);
+}
+
+.stars i{
+  font-size: var(--mediumLenght3);
+  color: var(--black);
+}
+
+.price{
+  display: flex;
+  justify-content: center;
+}
+
+.price p{
+  color: var(--black);
+  font-size: var(--largeLenght1);
+}
+
+.price span{
+  text-decoration: line-through;
+  margin-left: 5px;
+  font-size: var(--mediumLenght3);
+  vertical-align:middle;
+}
+
+.hide {
+  display: none;
+} 
+
+#sort{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}

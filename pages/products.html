@@ -60,8 +60,10 @@
     </div>
 
     <div class="search-bar">
-        <input type="search" id="search-input" placeholder="Cauta produsul dorit...">
+        <input type="search" placeholder="Cauta produsul dorit...">
+        <!-- id="search-input" -->
         <label for="search-input" class="fa-solid fa-magnifying-glass"></label>
+         <!-- id="search"  -->
     </div>
 
     <div class="shop-container">
@@ -156,6 +158,44 @@
 
 
 <section class="inside">
+  
+  <div class="wrapper">
+    <div id="search-container">
+      <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Cauta</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('Ceramica')">
+        Ceramica
+      </button>
+      <button class="button-value" onclick="filterProduct('Textile')">
+        Textile
+      </button>
+      <button class="button-value" onclick="filterProduct('Portrete')">
+        Portrete
+      </button>
+      <button class="button-value" onclick="filterProduct('More')">
+        More
+      </button>
+    </div>
+    <div id="sort">
+      <label for="drop">Sorteaza produsele:</label>
+      <select name="drop" id="drop-down">
+        <option value="" >-------------------------</option>
+        <option value="new" id="drop-value">Cele mai noi</option>
+        <option value="cheap">Pret crescator</option>
+        <option value="expensive">Pret descrescator</option>
+        <option value="name-up" onclick="sortProduct()">Nume A-Z</option>
+        <option value="name-down"onclick="sortProduct()">Nume Z-A</option>
+      </select>
+    </div>
+    <div id="products"></div>
+  </div>
 
 </section>
 
@@ -191,12 +231,16 @@
 
 </main>
 
+
+
 </body>
 
 <!--My JavaScripts -->
 <script src="../scripts/script-for-main/navbar-icons.js"></script>
 <script src="../scripts/script-for-main/navbar-sticky-effect.js"></script>
 <script src="../scripts/script-for-main/login-signin.js"></script>
+
+<script src="../scripts/scripts-for-products/pro.js"></script>
 
 <script src="../scripts/script-for-support/accordion-id.js"></script>
 <!-- ------------ -->

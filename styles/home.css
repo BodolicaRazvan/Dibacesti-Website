@@ -152,7 +152,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: var(--largeLenght2);
-    /* gap: var(--mediumLenght3); */
 }
 
 .products .box-container .box{
