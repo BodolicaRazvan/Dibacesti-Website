@@ -158,6 +158,20 @@
    text-align: center;
    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
    padding: var(--largeLenght1);
+   position: relative;
+}
+
+.products .box-container .box .new-product{
+    width: 6rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: var(--largeLenght1);
+    background-color: var(--brown);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .products .box-container .box .icons a{

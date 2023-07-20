@@ -187,33 +187,57 @@ header .shop-container .shop-item{
     display: flex;
     align-items: center;
     gap: var(--mediumLenght3);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 header .shop-container .shop-item img{
-    height: 7rem;
+    height: 8rem;
 }
 
 header .shop-container .shop-item .fa-x{
-    position: absolute;
-    top: var(--mediumLenght1);
-    right: var(--mediumLenght1);
-    font-size: var(--largeLenght1);
+    font-size: var(--mediumLenght3);
     cursor: pointer;
     color: var(--black);
+    position: absolute;
+    right: 0;
 }
 
 header .shop-container .shop-item .fa-x:hover{
     color: var(--brown);
 }
 
+header .shop-container .shop-item .content span{
+    font-size: var(--largeLenght1);
+    font-weight:600;
+}
+
 header .shop-container .shop-item .content h3{
     font-size: var(--largeLenght1);
+    font-weight: lighter;
     color: var(--black);
     padding-bottom: var(--smallLenght2);
 }
 
 header .shop-container .shop-item .content .price{
     font-size: var(--mediumLenght3);
+    color: var(--brown);
+}
+
+header .shop-container .empty{
+    margin-top: 400px;
+    font-size: var(--largeLenght1);
+    color: var(--black);
+    text-align: center;
+}
+
+header .shop-container #total{
+    text-align: left;
+    font-size: var(--largeLenght1);
+    color: var(--black);
+    display: none;
+}
+
+header .shop-container #get-price{
     color: var(--brown);
 }
 
@@ -229,6 +253,11 @@ header .shop-container .shop-item .content .price{
 
 .btn:hover{
     letter-spacing: .1rem;
+}
+
+.pay-button {
+    margin-top: var(--largeLenght1);
+    display: none;   
 }
 
 header .shop-container .btn{

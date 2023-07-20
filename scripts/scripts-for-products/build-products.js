@@ -1,90 +1,5 @@
-let products = {
-    data: [
-      {
-        productName: 'Setul de ceai "Acasă"',
-        category: "Ceramica",
-        image: "../images/portrete-photo.jpg",
-        imageOption1: "../images/portrete-photo.jpg",
-        imageOption2: "../images/textile-photo.jpg",
-        imageOption3: "../images/portrete-photo.jpg",
-        text: "Produsul asta este adaugat acum",
-        stars: "4",
-        price: "20",
-        oldPrice: "250",
-        date: "2019-06-01",
-        newProducts: "New",
-        sales: "Sale"
-      },
-      {
-        productName: 'Setul de ceai "calm"',
-        category: "Ceramica",
-        price: "49",
-        oldPrice: "200",
-        text: "hello",
-        image: "../images/ceramica-photo.jpg",
-        stars: "5",
-        date: "2020-06-01"
-      },
-      {
-        productName: "Sporty SmartWatch",
-        category: "Portrete",
-        price: "99",
-        oldPrice: "350",
-        image: "../images/portrete-photo.jpg",
-        date: "2018-06-01"
-      },
-      {
-        productName: "Basic Knitted Top",
-        category: "Textile",
-        price: "29",
-        image: "../images/textile-photo.jpg",
-        date: "2019-06-01"
-      },
-      {
-        productName: "Black Leather Jacket",
-        category: "Portrete",
-        price: "129",
-        image: "../images/portrete-photo.jpg",
-        date: "2019-06-01"
-      },
-      {
-        productName: "Stylish Pink Trousers",
-        category: "Ceramica",
-        price: "89",
-        image: "../images/ceramica-photo.jpg",
-        date: "2020-06-01",
-        newProducts: "New",
-        sales: "Sale"
-      },
-      {
-        productName: "Brown Men's Jacket",
-        category: "Textile",
-        price: "189",
-        image: "../images/textile-photo.jpg",
-        date: "2019-06-01"
-      },
-      {
-        productName: "Comfy Gray Pants",
-        category: "Ceramica",
-        price: "49",
-        oldPrice: "650",
-        image: "../images/ceramica-photo.jpg",
-        date: "2022-06-01",
-        sales: "Sale"
-      },
-      {
-        productName: "Short Pants",
-        category: "More",
-        price: "70",
-        image: "../images/portrete-photo.jpg",
-        date: "2019-06-01"
-      },
-    ],
-  };
-  
-
-let arr1 = [];
-for (let i of products.data) {
+function buildCard(){
+  for (let i of products.data) {
     //box 
     let box = document.createElement("div");
     box.classList.add("box", i.category, i.newProducts, i.sales, "hide");
@@ -308,20 +223,9 @@ for (let i of products.data) {
 
 }
 
-
-window.onload = () => {
-  filterProduct("all");
-};
-  
+}
 
 
-
-
-
-  
-
-  
-
-
-
-   
+function removeCards(){
+    document.getElementById('products').textContent = '';
+}
