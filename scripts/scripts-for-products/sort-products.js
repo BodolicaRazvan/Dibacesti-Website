@@ -16,8 +16,6 @@
       element.classList.remove("hide");
       });
       filterProduct("all");
-      console.log(products.data);
-
     }
 
 
@@ -34,7 +32,6 @@
       element.classList.remove("hide");
       });
       filterProduct("all");
-      console.log(products.data);
     }
 
 
@@ -53,7 +50,6 @@
       element.classList.remove("hide");
       });
       filterProduct("all");
-      console.log(products.data);
     }
 
 
@@ -72,7 +68,6 @@
       element.classList.remove("hide");
       });
       filterProduct("all");
-      console.log(products.data);
     }
 
 
@@ -88,7 +83,6 @@
       element.classList.remove("hide");
       });
       filterProduct("all");
-      console.log(products.data);
     }
 
 

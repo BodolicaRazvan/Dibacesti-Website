@@ -42,18 +42,18 @@
         <a href="pages/about.html">Despre noi</a>
         <a href="pages/products.html">Produse</a>
         <a href="#menu">Categorii</a>
-        <a href="#media">Media</a>
-        <a href="#review">Pareri</a>
+        <a href="#media">Social Media</a>
+        <a href="#review">De la voi</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="icons">
-        <div id="search-btn">
+        <!-- <div id="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div id="shop-btn">
             <i class="fa-solid fa-regular fa-cart-shopping"></i>
-        </div>
+        </div> -->
         <div id="account-btn">
             <i class="fa-solid fa-user" id="form-open"></i>
         </div>
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="search-bar">
+    <!-- <div class="search-bar">
         <input type="search" id="search-input" placeholder="Cauta produsul dorit...">
         <label for="search-input" class="fa-solid fa-magnifying-glass"></label>
     </div>
@@ -93,63 +93,70 @@
             </div>
         </div>
         <a href="#" class="btn">Mergi la plata</a>
-    </div>
+    </div> -->
+
 
     <div class="account-container">
 
         <div class="form_container">
           <i class="fa-solid fa-xmark form_close"></i>
           <div class="form login_form">
-            <form action="#">
-              <h2>Login</h2>
+            <form id="form-login">
+              <h2>Contul meu</h2>
       
               <div class="input_box">
-                <input type="email" placeholder="Enter your email" required />
+                <input type="email" id="email-login" placeholder="Adresa de email" required />
                 <i class="fa-solid fa-envelope email"></i>
               </div>
               <div class="input_box">
-                <input type="password" placeholder="Enter your password"/>
+                <input type="password" id="password-login" placeholder="Parola" required/>
                 <i class="fa-solid fa-lock password"></i>
                 <i class="fa-solid fa-eye-slash pw_hide"></i>
               </div>
       
               <div class="option_field">
                 <span class="checkbox">
-                  <input type="checkbox" id="check" />
-                  <label for="check">Remember me</label>
+                  <input type="checkbox" id="check" checked/>
+                  <label for="check">Tine-ma minte</label>
                 </span>
-                <a href="#" class="forgot_pw">Forgot password?</a>
+                <a href="#" class="forgot_pw">Ai uitat parola?</a>
               </div>
       
-              <button class="button">Login Now</button>
+              <div class="result-L">
+                <p id="result-login"></p>
+              </div>
+              <button type="submit" class="button" id="login-btn">Intra in cont</button>
       
-              <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+              <div class="login_signup">Nu ai cont? <a href="#" id="signup">Inregistreaza-te</a></div>
             </form>
           </div>
       
           <!-- Signup From -->
           <div class="form signup_form">
-            <form action="#">
-              <h2>Signup</h2>
+            <form id="form-singup">
+              <h2>Inregistreaza-te</h2>
       
               <div class="input_box">
-                <input type="email" placeholder="Enter your email" required />
+                <input type="email" id="email-signup" placeholder="Adresa de email" required />
                 <i class="fa-solid fa-envelope email"></i>
               </div>
               <div class="input_box">
-                <input type="password" placeholder="Create password" required />
+                <input type="password" id="password-signup" placeholder="Parola"  required />
                 <i class="fa-solid fa-lock password"></i>
                 <i class="fa-solid fa-eye-slash pw_hide"></i>
               </div>
               <div class="input_box">
-                <input type="password" placeholder="Confirm password" required />
+                <input type="password" id="password-repeat-signup" placeholder="Confirma parola" required />
                 <i class="fa-solid fa-lock password"></i>
                 <i class="fa-solid fa-eye-slash pw_hide"></i>
               </div>
       
-              <button class="button">Signup Now</button>
+              <div class="result-S">
+                <p id="result-signup"></p>
+              </div>
+              <button type="submit" class="button">Creeaza cont</button>
       
-              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+              <div class="login_signup">Ai deja un cont? <a href="#" id="login">Intra in cont</a></div>
             </form>
           </div>
         </div>
@@ -197,12 +204,10 @@
             <div class="swiper-slide box">
                 <div class="content">
                     <h3>Ceramica pictata</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                        corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                        laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                        eaque at.</p>
-                    <a href="#blogs" class="btn">Mai multe</a>
+                    <p>Aici vei găsi căniţe, ceainice şi alte bucurii pictate manual cu drag şi grijă. Fiecare produs
+                         e unic și poate fi personalizat după preferințe, ca să le arăți celor apropiați cât sunt de 
+                         importanți pentru tine. </p>
+                    <a onclick="filterProductA('Ceramica')" class="btn">Vezi Produsele</a>
                 </div>
                 <div class="img">
                     <img src="images/textile-photo.jpg" alt="">
@@ -211,12 +216,9 @@
             <div class=" swiper-slide box">
                 <div class="content">
                     <h3>Textile</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                        corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                        laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                        eaque at.</p>
-                    <a href="#blogs" class="btn">learn more</a>
+                    <p>Descoperă gama de hăinuțe pentru casă, cusute cu drag la noi. De la lenjerii de pat în culori
+                         delicate, la naproane și șervețele de masă, toate îți vor transforma locuința în ,,acasă”.</p>
+                    <a onclick="filterProductA('Textile')" class="btn">Vezi Produsele</a>
                 </div>
                 <div class="img">
                     <img src="images/portrete-photo.jpg" alt="">
@@ -225,12 +227,9 @@
             <div class=" swiper-slide box">
                 <div class="content">
                     <h3>Papetarie</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                        corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                        laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                        eaque at.</p>
-                    <a href="#blogs" class="btn">learn more</a>
+                    <p>Aici vei găsi dibăceli ilustrate aşezate pe hârtie dar şi alte bucurii. Alege una
+                         din ilustrațiile sau felicitările noastre, și suprinde-ți oamenii dragi </p>
+                    <a  onclick="filterProductA('Papetarie')" class="btn">Vezi Produsele</a>
                 </div>
                 <div class="img">
                     <img src="images/ceramica-photo.jpg" alt="">
@@ -239,12 +238,9 @@
             <div class="swiper-slide box">
                 <div class="content">
                     <h3>Portrete ilustatre</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                        corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                        laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                        eaque at.</p>
-                    <a href="#blogs" class="btn">learn more</a>
+                    <p>Descoperă cum poți comanda și tu un portret personalizat.
+                     Așezăm în ramă amintiri, trăiri și sentimente pentru cele mai importante momente din viața ta. </p>
+                    <a onclick="filterProductA('Portrete')" class="btn">Vezi Produsele</a>
                 </div>
                 <div class="img">
                     <img src="images/portrete-photo.jpg" alt="">
@@ -1032,21 +1028,20 @@
 
         <iframe class="map map-contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.3501837680465!2d26.912701576677488!3d46.58031425828144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b56fe3025554d1%3A0x3eb6db2bfc2aaa09!2sArena%20Mall!5e0!3m2!1sro!2sro!4v1687256816549!5m2!1sro!2sro" allowfullscreen="" loading="lazy"></iframe>
     
-        <form action="" class="form-contact">
-            <h3>Ia legatura cu noi</h3>
-            <div class="inputBox">
+        <form class="form-contact">
+            <h3>Scrie-ne</h3>
+            <div class="input-box">
                 <span class="fa-solid fa-user"></span>
-                <input type="text" placeholder="Nume">
+                <input type="text" placeholder="Nume" required>
             </div>
-            <div class="inputBox">
+            <div class="input-box">
                 <span class="fa-solid fa-envelope"></span>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" required>
             </div>
-            <div class="inputBox">
-                <span class="fa-solid fa-phone"></span>
-                <input type="Number" placeholder="Numar Telefon">
+            <div class="text-area">
+                <textarea  rows="10" cols="100" minlength="10" maxlength="100" placeholder="Mesajul tau..." required></textarea>
             </div>
-            <input type="submit" class="btn" value="Contacteaza-ne acum">
+            <button id="submit-form" type="submit" class="btn">Trimite</button>
         </form>
 
     </div>
@@ -1059,7 +1054,7 @@
 
     <div class="footer-box">
         <h3>Magazin</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Strada Ștefan cel Mare 28, Bacău 600360</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/Dibacesti" class="fa-brands fa-facebook-f"></a>
             <a href="https://www.instagram.com/dibacesti/" class="fa-brands fa-instagram"></a>
@@ -1067,9 +1062,9 @@
     </div>
     <div class="footer-box">
         <h3>Suport</h3>
-        <li><a  id="payments" onclick="saveID(this.id)" href="/pages/support.html">Modalitati de plata</a></li>
-        <li><a  id="return" onclick="saveID(this.id)" href="/pages/support.html">Politica de retur</a></li>
-        <li><a  id="terms" onclick="saveID(this.id)" href="/pages/support.html">Termenii si conditii</a></li>
+        <li><a  id="payments" onclick="saveID(this.id)" href="/pages/support.html#inside">Modalitati de plata</a></li>
+        <li><a  id="return" onclick="saveID(this.id)" href="/pages/support.html#inside">Politica de retur</a></li>
+        <li><a  id="terms" onclick="saveID(this.id)" href="/pages/support.html#inside">Termenii si conditii</a></li>
     </div>
 
     <div class="footer-box">
@@ -1102,8 +1097,11 @@
 <script src="/scripts/script-for-home/instagram-like.js"></script>
 <script src="/scripts/script-for-home/reveal-home.js"></script>
 <script src="/scripts/script-for-home/swipers.js"></script>
+<script src="/scripts/script-for-home/categories-filters.js"></script>
 
 <script src="/scripts/script-for-support/accordion-id.js"></script>
+<script src="/scripts/scripts-for-products/filter-products.js"></script>
+<script src="/scripts/scripts-for-products/build-products.js"></script>
 <!-- ------------ -->
 
 </body>

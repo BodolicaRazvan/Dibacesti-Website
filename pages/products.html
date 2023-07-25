@@ -40,13 +40,16 @@
         <a href="#">Produse</a>
         <a href="../index.html#menu">Categorii</a>
         <a href="../index.html#media">Media</a>
-        <a href="../index.html#review">Pareri</a>
+        <a href="../index.html#review">De la voi</a>
         <a href="../index.html#contact">Contact</a>
     </nav>
 
     <div class="icons">
         <div id="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="heart-btn">
+          <i class="fa-solid fa-heart"></i>
         </div>
         <div id="shop-btn">
             <i class="fa-solid fa-regular fa-cart-shopping"></i>
@@ -60,19 +63,15 @@
     </div>
 
     <div class="search-bar">
-        <input type="search" placeholder="Cauta produsul dorit...">
-        <!-- id="search-input" -->
-        <label for="search-input" class="fa-solid fa-magnifying-glass"></label>
-         <!-- id="search"  -->
+        <input type="search" id="search-input-navbar" placeholder="Cauta produsul dorit...">
+        <label for="search-input" class="fa-solid fa-magnifying-glass" id="search-navbar"></label>
     </div>
 
     <div class="shop-container">
 
       <p class="empty" id="empty-cart">Cosul de cumparaturi este gol</p>
 
-      <div id="cart-container">
-        
-      </div>
+      <div id="cart-container"></div>
 
 
       <p id="total">Total: $<span id="get-price">0</span></p>
@@ -89,29 +88,31 @@
       <div class="form_container">
         <i class="fa-solid fa-xmark form_close"></i>
         <div class="form login_form">
-          <form action="#">
+          <form id="form-login">
             <h2>Login</h2>
     
             <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
+              <input type="email" id="email-login" placeholder="Enter your email" required />
               <i class="fa-solid fa-envelope email"></i>
             </div>
             <div class="input_box">
-              <input type="password" placeholder="Enter your password"/>
+              <input type="password" id="password-login" placeholder="Enter your password" required/>
               <i class="fa-solid fa-lock password"></i>
               <i class="fa-solid fa-eye-slash pw_hide"></i>
             </div>
     
             <div class="option_field">
               <span class="checkbox">
-                <input type="checkbox" id="check" />
+                <input type="checkbox" id="check" checked/>
                 <label for="check">Remember me</label>
               </span>
               <a href="#" class="forgot_pw">Forgot password?</a>
             </div>
     
-            <button class="button">Login Now</button>
-
+            <div class="result-L">
+              <p id="result-login">create</p>
+            </div>
+            <button type="submit" class="button" id="login-btn">Login Now</button>
     
             <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
           </form>
@@ -119,25 +120,28 @@
     
         <!-- Signup From -->
         <div class="form signup_form">
-          <form action="#">
+          <form id="form-singup">
             <h2>Signup</h2>
     
             <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
+              <input type="email" id="email-signup" placeholder="Enter your email" required />
               <i class="fa-solid fa-envelope email"></i>
             </div>
             <div class="input_box">
-              <input type="password" placeholder="Create password" required />
+              <input type="password" id="password-signup" placeholder="Create password"  required />
               <i class="fa-solid fa-lock password"></i>
               <i class="fa-solid fa-eye-slash pw_hide"></i>
             </div>
             <div class="input_box">
-              <input type="password" placeholder="Confirm password" required />
+              <input type="password" id="password-repeat-signup" placeholder="Confirm password" required />
               <i class="fa-solid fa-lock password"></i>
               <i class="fa-solid fa-eye-slash pw_hide"></i>
             </div>
     
-            <button class="button">Signup Now</button>
+            <div class="result-S">
+              <p id="result-signup"></p>
+            </div>
+            <button type="submit" class="button">Signup Now</button>
     
             <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
           </form>
@@ -147,59 +151,61 @@
 
 </header>
 
+<section class="home" id="home">
 
-<section class="inside">
+  <div class="content animate__animated animate__slideInDown">
+      <h3>Bine ai venit la noi</h3>
+      <p>E o bucurie să ştim că eşti aici. </p>
+  </div>
+
+</section>
+
+<section class="inside" id="inside">
   
-  <div class="wrapper">
-    <div id="search-container">
-      <input
-          type="search"
-          id="search-input"
-          placeholder="Search product name here.."
-        />
+    <div class="wrapper">
+
+      <div class="controls-products">
+      <div id="search-container">
+        <input type="search" id="search-input" placeholder="Cauta produsul pe care il vrei"/>
         <button id="search">Cauta</button>
+      </div>
+
+
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Ceramica')">
+          Ceramica
+        </button>
+        <button class="button-value" onclick="filterProduct('Textile')">
+          Textile
+        </button>
+        <button class="button-value" onclick="filterProduct('Portrete')">
+          Portrete
+        </button>
+        <button class="button-value" onclick="filterProduct('Papetarie')">
+          Papetarie
+        </button>
+        <button class="button-value" onclick="filterProduct('New')">
+          Produse Noi
+        </button>
+        <button class="button-value" onclick="filterProduct('Sale')">
+          Reduceri
+        </button>
+      </div>
+
+
+      <div id="sort">
+        <select name="drop" id="drop-down"  onchange="sortProducts()">
+          <option value="" selected="selected">Sorteaza produsele:</option>
+          <option value="newest">Cele mai noi</option>
+          <option value="cheapest">Pret crescator</option>
+          <option value="expensive">Pret descrescator</option>
+          <option value="name-up">Nume A-Z</option>
+          <option value="name-down">Nume Z-A</option>
+          
+        </select>
+      </div>
     </div>
-
-
-    <div id="buttons">
-      <button class="button-value" onclick="filterProduct('all')">All</button>
-      <button class="button-value" onclick="filterProduct('Ceramica')">
-        Ceramica
-      </button>
-      <button class="button-value" onclick="filterProduct('Textile')">
-        Textile
-      </button>
-      <button class="button-value" onclick="filterProduct('Portrete')">
-        Portrete
-      </button>
-      <button class="button-value" onclick="filterProduct('More')">
-        More
-      </button>
-      <button class="button-value" onclick="filterProduct('New')">
-        Produse Noi
-      </button>
-      <button class="button-value" onclick="filterProduct('Sale')">
-        Reduceri
-      </button>
-    </div>
-
-
-    <div id="sort">
-      <label for="drop">Sorteaza produsele:</label>
-
-      <select name="drop" id="drop-down"  onchange="sortProducts()">
-
-        <option value="" selected="selected">-------------------------</option>
-
-        <option value="newest">Cele mai noi</option>
-        <option value="cheapest">Pret crescator</option>
-        <option value="expensive">Pret descrescator</option>
-        <option value="name-up">Nume A-Z</option>
-        <option value="name-down">Nume Z-A</option>
-        
-      </select>
-    </div>
-
         
     <div class="overlay hidden"></div>
 
@@ -233,18 +239,22 @@
         </div>
 
   </div>
-
-
-<div id="tester"></div>
-
-    
+   
   </div>
 
 </section>
 
+<section>
 
+  <div class="container-favorite">
+    <h3 class="title-favorite">Produse salvate</h3>
+    <p class="empty-favorite">Niciun produs nu a fost adaugat la favorite</p>
+    <div id="favorite"></div>
+  </div>
 
-<section class="footer">
+</section>
+
+<section class="footer" id="footer">
 
     <div class="footer-box">
         <h3>Magazin</h3>
@@ -256,9 +266,9 @@
     </div>
     <div class="footer-box">
         <h3>Suport</h3>
-        <li><a  id="payments" onclick="saveID(this.id)" href="support.html">Modalitati de plata</a></li>
-        <li><a  id="return" onclick="saveID(this.id)" href="support.html">Politica de retur</a></li>
-        <li><a  id="terms" onclick="saveID(this.id)" href="support.html">Termenii si conditii</a></li>
+        <li><a  id="payments" onclick="saveID(this.id)" href="support.html#inside">Modalitati de plata</a></li>
+        <li><a  id="return" onclick="saveID(this.id)" href="support.html#inside">Politica de retur</a></li>
+        <li><a  id="terms" onclick="saveID(this.id)" href="support.html#inside">Termenii si conditii</a></li>
     </div>
 
     <div class="footer-box">
@@ -284,12 +294,15 @@
 <script src="../scripts/script-for-main/login-signin.js"></script>
 
 <script src="../scripts/scripts-for-products/build-products.js"></script>
-<script src="../scripts/scripts-for-products/pro.js"></script>
+<script src="../scripts/scripts-for-products/products.js"></script>
 <script src="../scripts/scripts-for-products/quick-view.js"></script>
 <script src="../scripts/scripts-for-products/sort-products.js"></script>
 <script src="../scripts/scripts-for-products/search-products.js"></script>
+<script src="../scripts/scripts-for-products/search-products-navbar.js"></script>
 <script src="../scripts/scripts-for-products/filter-products.js"></script>
 <script src="../scripts/scripts-for-products/favorite-products.js"></script>
+<script src="../scripts/scripts-for-products/cart-products-saved.js"></script>
+<script src="../scripts/scripts-for-products/reveal-products.js"></script>
 
 
 <script src="../scripts/script-for-support/accordion-id.js"></script>

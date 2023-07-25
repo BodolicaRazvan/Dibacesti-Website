@@ -10,8 +10,10 @@
 }
 
 #search-container {
-  margin: 1em 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: var(--largeLenght1);
 }
 
 #search-container input {
@@ -40,10 +42,6 @@
   color: var(--white);
 }
 
-#buttons{
-  text-align: center;
-  margin-bottom: 2rem;
-}
 
 .button-value {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
@@ -59,7 +57,7 @@
   color: var(--white);
 }
 
-.active {
+.button-value.active {
   background-color: var(--brown);
   color: #ffffff;
 }
@@ -69,18 +67,49 @@
   font-size: var(--largeLenght1);
 }
 
-#drop-down{
-  margin-left: 1rem;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 3em; 
-  background-color: transparent;
-  color: var(--black);
+#buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-bottom: var(--largeLenght2);
 }
 
-#products, #tester {
+#buttons button{
+  margin-left: var(--mediumLenght2);
+  margin-bottom: var(--mediumLenght1);
+}
+
+#drop-down{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+  padding: 1em 2.2rem;
+  border-radius: 3em;
+  background-color: transparent;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#products, #favorite {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--largeLenght2);
+}
+
+.container-favorite{
+  display: none;
+}
+
+.container-favorite .title-favorite{
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 3rem;
+}
+
+.container-favorite .empty-favorite{
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 2rem;
+  display: none;
 }
 
 .box{
@@ -166,7 +195,7 @@
   display: flex;
   justify-content: center;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: var(--largeLenght5);
 }
 
 
@@ -332,6 +361,21 @@
   border-radius: 30px;
 }
 
+.home{
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: url(/images/chloe-bolton-R0qthXq3jec-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 3s;
+}
+
 @media only screen and (max-width:768px) {
   .modal-container{
     max-width: 90%;
@@ -368,4 +412,31 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media (max-width:1280px){
+
+  #products, #favorite{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width:768px){
+
+  #products, #favorite{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width:450px){
+
+  #products, #favorite{
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  #search-btn, #heart-btn{
+    display: none;
+  }
+
+
 }

@@ -1,6 +1,11 @@
 .inside{
-    margin-top: 70px;
+
     height: 100vh;
+    background-image: url(/images/test.jpg);
+    background-repeat: no-repeat;
+ background-size: contain;
+    background-position: center;
+    background-color: white;
 }
 
 h1{
@@ -10,16 +15,30 @@ h1{
 }
 
 .us{
-    max-width: 1300px;
-    margin: 2rem auto;
-    background: #fff;
+    width: 350px;
+    margin: 12rem auto;
+    text-align: center;
 }
+
+.background-letter{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 
 .us p{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Dancing Script' ,'Brush Script MT';
 }
 
-.animate__animated.animate__slideInDown {
-    --animate-duration: 2s;
-  }
-  
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(/images/aesthetic-rustic-plant-pots-mediterranean-home-decor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

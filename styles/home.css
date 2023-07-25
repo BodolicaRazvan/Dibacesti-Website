@@ -79,13 +79,15 @@
 .about .row .content h3{
     font-size: 3.5rem;
     color: var(--black);
+    margin-bottom: var(--mediumLenght3);
 }
 
 .about .row .content p{
-    font-size: var(--mediumLenght3);
+    font-size: var(--largeLenght1);
     color: var(--labelColor);
     padding: var(--mediumLenght1) 0;
     line-height: 1.8;
+    margin-bottom: var(--mediumLenght3);
 }
 
 
@@ -124,19 +126,19 @@
 }
 
 .blogs .blogs-row .box .content p{
-    font-size: var(--mediumLenght3);
+    font-size: var(--largeLenght1);
     color: var(--labelColor);
     padding: var(--mediumLenght1) 0;
     line-height: 1.8;
+    margin-bottom: var(--mediumLenght2);
 }
 
 .blogs .blogs-row .box .content a{
     font-size: var(--largeLenght1);
     cursor: pointer;
+    margin-top: var(--largeLenght2);
 }
-.blogs .blogs-row .box .content a:hover{
-    color: var(--black);
-}
+
 
 .blogs .swiper-pagination-bullet{
     background-color: var(--black);
@@ -309,21 +311,29 @@
     color: var(--black);
 }
 
-.contact .row form .inputBox{
+.contact .row form .input-box {
     display: flex;
     align-items: center;
     margin-top: var(--largeLenght1);
     margin-bottom: var(--largeLenght1);
     background-color: var(--white);
+    font-size: var(--largeLenght1);
 }
 
-.contact .row form .inputBox span{
+.contact .row form .text-area textarea{
+    background-color: var(--white);
+    resize: none;
+    font-size: var(--largeLenght1);
+    padding: 2rem;
+}
+
+.contact .row form .input-box span{
     color: var(--black);
     font-size: var(--largeLenght1);
     padding-left: var(--largeLenght1);
 }
 
-.contact .row form .inputBox input{
+.contact .row form .input-box input{
     width: 100%;
     padding: var(--largeLenght1);
     font-size: var(--largeLenght1);

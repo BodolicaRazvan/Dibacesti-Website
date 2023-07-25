@@ -72,6 +72,17 @@ h1{
 }
 
 .animate__animated.animate__slideInDown {
-    --animate-duration: 2s;
+    --animate-duration: 3s;
+  }
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(/images/bruno-cervera-4EDPLvQuRu4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
   

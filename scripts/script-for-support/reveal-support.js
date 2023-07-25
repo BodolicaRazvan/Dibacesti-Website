@@ -8,4 +8,5 @@ const sr= ScrollReveal({
   });
 
 sr.reveal('.footer', { origin: 'left'});
+sr.reveal('.inside', { origin: 'top'});
 //----------------
