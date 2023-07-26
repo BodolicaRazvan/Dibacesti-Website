@@ -100,7 +100,6 @@ formSignup.addEventListener('submit', e =>{
       email: email,
       password: pass,
     };
-
     const json = JSON.stringify(user);
     localStorage.setItem('username', json);
     formContainer.classList.remove("active");
@@ -125,8 +124,7 @@ formLogin.addEventListener('submit', e =>{
     document.querySelector(".result-L").style.display = 'block'
     resultLogin.innerHTML = "*Utilizatorul nu exista";
   }else if (email == data.email && pass == data.password){
-    document.querySelector(".result-L").style.display = 'block'
-    resultLogin.innerHTML = "*Conectare reusita";
+    document.querySelector(".result-L").style.display = 'none'
     account.classList.remove("show");
     formOpenBtn.style.display= 'none';
     let userEmail = data.email.substring(0, data.email.lastIndexOf("@"));

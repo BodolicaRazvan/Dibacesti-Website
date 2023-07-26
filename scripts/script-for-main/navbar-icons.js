@@ -1,8 +1,5 @@
 // Navbar Icons 
-// const submitFromContact = document.querySelector('#submit-form');
-// submitFromContact.addEventListener('submit', e =>{
-//     e.preventDefault();
-// });
+
 
 const navBar = document.querySelector('.nav-bar');
 document.querySelector('#menu-btn').onclick = () =>{

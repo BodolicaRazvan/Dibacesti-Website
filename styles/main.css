@@ -564,13 +564,18 @@ input[type=password]::-ms-clear
 @media (max-width:450px){
 
     html{
-        font-size: 50%;
+        font-size: 35%;
         width: 100%;
     }
 
 }
 
 @media (max-width:768px){
+
+    html{
+        font-size: 40%;
+        width: 100%;
+    }
 
     .home{
         background-position: left;
@@ -621,7 +626,7 @@ input[type=password]::-ms-clear
 @media (max-width:991px){
 
     html{
-        font-size: 55%;
+        font-size: 45%;
     }
 
     .header{
@@ -630,6 +635,10 @@ input[type=password]::-ms-clear
 
     section{
         padding: var(--largeLenght1);
+    }
+
+    .footer .footer-box{
+        margin: 0px;
     }
 
 }

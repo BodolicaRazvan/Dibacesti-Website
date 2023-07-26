@@ -13,7 +13,6 @@
 
 .home .content{
     max-width: 100%;
-    margin-left: var(--largeLenght4);
 }
 
 .home .content h3{
@@ -245,6 +244,7 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
+    height: 320px;
     padding: var(--largeLenght2) var(--largeLenght1);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin: 10px 0px;
@@ -256,10 +256,11 @@
 }
 
 .review .swiper-slide p{
-    font-size: var(--mediumLenght3);
-    line-height: var(--mediumLenght3);
+    font-size: var(--largeLenght1);
+    line-height: var(--largeLenght1);
     color: var(--black);
     padding-bottom: var(--largeLenght1);
+    margin-bottom: 15px;
 }
 
 .review .swiper-slide h3{
@@ -294,13 +295,13 @@
 }
 
 .contact .row .map{
-    flex: 1 1 45rem;
+    flex: 1 1 25rem;
     width: 100%;
     object-fit: cover;
 }
 
 .contact .row form{
-    flex: 1 1 45rem;
+    flex: 1 1 25rem;
     padding: var(--largeLenght4) var(--largeLenght1);
     text-align: center;
 }
@@ -321,8 +322,8 @@
 }
 
 .contact .row form .text-area textarea{
+    max-width: 100%;
     background-color: var(--white);
-    resize: none;
     font-size: var(--largeLenght1);
     padding: 2rem;
 }

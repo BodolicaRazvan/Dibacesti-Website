@@ -29,22 +29,14 @@ document.addEventListener("keydown", function (e) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // switch img in modal 
-function imgChange(image) {
+function imgChange(image, id) {
+   let imgOptions = document.querySelectorAll('.img-opt');
+   imgOptions.forEach(element => {
+    element = element.style.border = '0'
+  });
   document.querySelector('.slide').src = image;
+  document.getElementById(id).style.border = '2px solid var(--brown)';
 }
 
 function change(change) {

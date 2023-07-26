@@ -39,7 +39,7 @@
         <a href="about.html">Despre noi</a>
         <a href="#">Produse</a>
         <a href="../index.html#menu">Categorii</a>
-        <a href="../index.html#media">Media</a>
+        <a href="../index.html#media">Social Media</a>
         <a href="../index.html#review">De la voi</a>
         <a href="../index.html#contact">Contact</a>
     </nav>
@@ -77,7 +77,7 @@
       <p id="total">Total: $<span id="get-price">0</span></p>
 
       <div class="pay-button" id="pay">
-        <a href="#" class="btn">Mergi la plata</a>
+        <a href="payment.html" class="btn">Mergi la plata</a>
       </div>
 
 
@@ -162,6 +162,7 @@
 
 <section class="inside" id="inside">
   
+
     <div class="wrapper">
 
       <div class="controls-products">
@@ -218,9 +219,10 @@
           <div class="left">
             <img src="/images/textile-photo.jpg" id="img-option-main" class="slide">
             <div class="option" >
-              <img src="/images/portrete-photo.jpg" id="img-option1" onclick="imgChange('/images/portrete-photo.jpg')">
-              <img src="/images/ceramica-photo.jpg" id="img-option2" onclick="imgChange('/images/ceramica-photo.jpg')">
-              <img src="/images/textile-photo.jpg"  id="img-option3" onclick="imgChange('/images/textile-photo.jpg')">
+              <img src="/images/portrete-photo.jpg" class="img-opt" id="img-option1" onclick="imgChange(this.src, this.id)">
+              <img src="/images/ceramica-photo.jpg" class="img-opt" id="img-option2" onclick="imgChange(this.src, this.id)">
+              <img src="/images/textile-photo.jpg"  class="img-opt" id="img-option3" onclick="imgChange(this.src, this.id)">
+              <img src="/images/textile-photo.jpg"  class="img-opt" id="img-option4" onclick="imgChange(this.src, this.id)">
             </div>
           </div>
           <div class="right">

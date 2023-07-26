@@ -37,8 +37,17 @@ h1{
     display: flex;
     justify-content: start;
     align-items: center;
-    background-image: url(/images/aesthetic-rustic-plant-pots-mediterranean-home-decor.jpg);
+    background-image: url(/images/images-pages/cartonase.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+@media (max-width:1280px){
+
+    .inside{
+      background-image: url('');
+      background-color: var(--white);
+    }
+  }
+  
