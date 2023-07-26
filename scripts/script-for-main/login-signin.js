@@ -103,6 +103,7 @@ formSignup.addEventListener('submit', e =>{
     const json = JSON.stringify(user);
     localStorage.setItem('username', json);
     formContainer.classList.remove("active");
+    document.querySelector(".result-S").style.display = 'none';
   }else{
     document.querySelector(".result-S").style.display = 'block';
     resultSignup.innerHTML = "*Parola nu coincide";

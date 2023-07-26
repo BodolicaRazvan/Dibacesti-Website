@@ -3,6 +3,8 @@
     optionValue = document.getElementById("drop-down").value;
     let elements = document.querySelectorAll(".box");
 
+
+
       //Sort by cheap
     if(optionValue == 'cheapest'){
       removeCards();
