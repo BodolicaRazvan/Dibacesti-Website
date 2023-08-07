@@ -36,6 +36,7 @@ function imgChange(image, id) {
     element = element.style.border = '0'
   });
   document.querySelector('.slide').src = image;
+  document.querySelector("#img-option4").style.border = '0';
   document.getElementById(id).style.border = '2px solid var(--brown)';
 }
 

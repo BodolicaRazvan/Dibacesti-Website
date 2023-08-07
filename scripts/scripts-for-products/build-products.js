@@ -76,6 +76,11 @@ function buildCard(){
     a3.addEventListener("click", () => {
       modal.classList.remove("hidden");
       overlay.classList.remove("hidden");
+      let imgOptions = document.querySelectorAll('.img-opt');
+        imgOptions.forEach(element => {
+        element = element.style.border = '0'
+      });
+      document.querySelector("#img-option4").style.border = '2px solid var(--brown)';
       
       document.getElementById("titleQuick").innerText = i.productName;
       document.getElementById("priceQucik").innerText = "$" + i.price;
@@ -84,6 +89,7 @@ function buildCard(){
       document.getElementById("img-option1").src = i.imageOption1;
       document.getElementById("img-option2").src = i.imageOption2;
       document.getElementById("img-option3").src = i.imageOption3;
+      document.getElementById("img-option4").src = i.image;
       let addToCard = document.getElementById("add-to-cart");
   
       addToCard.addEventListener("click", () =>{
@@ -385,14 +391,13 @@ function buildCard(){
       }
       let testout = localStorage.getItem("test");
       if(testout.includes(i.productName)){
-        console.log('exista');
+        alert('Produsul este deja la favorite');
       }else{
         let testout = localStorage.getItem("test");
         if(testout !== null){
           let words = testout.split(',');
           words.push(i.productName);
           const user = localStorage.getItem("logged");
-          console.log(user);
           if(user !== null){
             localStorage.setItem("test", words);
           }else{
@@ -402,14 +407,14 @@ function buildCard(){
           let words = testout;
           words = i.productName;
           const user = localStorage.getItem("logged");
-          console.log(user);
           if(user !== null){
             localStorage.setItem("test", words);
           }else{
             localStorage.setItem("test", null);
           }
         }
-          //box 
+
+    //box 
     let box = document.createElement("div");
     box.classList.add("box", i.category, i.newProducts, i.sales);
     //new
@@ -485,6 +490,11 @@ function buildCard(){
      a3.addEventListener("click", () => {
       modal.classList.remove("hidden");
       overlay.classList.remove("hidden");
+      let imgOptions = document.querySelectorAll('.img-opt');
+        imgOptions.forEach(element => {
+        element = element.style.border = '0'
+      });
+      document.querySelector("#img-option4").style.border = '2px solid var(--brown)';
       
       document.getElementById("titleQuick").innerText = i.productName;
       document.getElementById("priceQucik").innerText = "$" + i.price;
@@ -493,6 +503,7 @@ function buildCard(){
       document.getElementById("img-option1").src = i.imageOption1;
       document.getElementById("img-option2").src = i.imageOption2;
       document.getElementById("img-option3").src = i.imageOption3;
+      document.getElementById("img-option4").src = i.image;
       let addToCard = document.getElementById("add-to-cart");
 
       addToCard.addEventListener("click", () =>{

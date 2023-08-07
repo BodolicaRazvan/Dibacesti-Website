@@ -23,6 +23,7 @@ let products = {
         imageOption2: "../images/produse-papetarie/Ilustratie-ce-bine/Ilustratie-ce-bine-2.jpg",
         imageOption3: "../images/produse-papetarie/Ilustratie-ce-bine/Ilustratie-ce-bine-3.jpg",
         price: "15",
+        stars: "5",
         date: "2023-07-25",
         text: "Felicitare ilustrată cartonată, printată faţă-verso. Vine însoţită de un plic alb şi de un sigiliu de ceară auto-adeziv care poate fi lipit ulterior. "
       },
@@ -34,6 +35,7 @@ let products = {
         imageOption2: "../images/produse-papetarie/Felicitarea-supermama/Felicitarea-supermama-2.jpg",
         imageOption3: "../images/produse-papetarie/Felicitarea-supermama/Felicitarea-supermama-3.jpg",
         price: "15",
+        stars: "5",
         date: "2023-07-25",
         text: "Felicitare ilustrată cartonată, printată faţă-verso, cu margini rotunjite. Vine însoţită de un plic alb."
       },
@@ -45,6 +47,7 @@ let products = {
         imageOption2: "../images/produse-papetarie/Felicitare-cea-mai-frumoasa-floare/Felicitare-cea-mai-frumoasa-floare-2.jpg",
         imageOption3: "../images/produse-papetarie/Felicitare-cea-mai-frumoasa-floare/Felicitare-cea-mai-frumoasa-floare-3.jpg",
         price: "15",
+        stars: "5",
         date: "2023-07-25",
         text: "Felicitare ilustrată cartonată, printată faţă-verso, cu margini rotunjite. Vine însoţită de un plic alb."
       },
@@ -56,6 +59,7 @@ let products = {
         imageOption2: "../images/produse-papetarie/Ilustratie-nou-nascuti/Ilustratie-nou-nascuti-2.jpg",
         imageOption3: "../images/produse-papetarie/Ilustratie-nou-nascuti/Ilustratie-nou-nascuti-3.jpg",
         price: "120",
+        stars: "5",
         date: "2023-07-25",
         text: "Ilustraţie de bun venit în lume a celui mai mare dar - un bebeluş. De dăruit părinţilor, de decorat camera celui mic sau pur şi simplu de păstrat ca amintire. Ilustraţia conţine prenumele bebeluşului şi date despre naştere pe care te rugăm să le completezi în câmpurile alăturate."
       },
@@ -67,6 +71,7 @@ let products = {
         imageOption2: "../images/produse-papetarie/Ilustratie-cu-initiala-numelui/Ilustratie-cu-initiala-numelui-2.jpg",
         imageOption3: "../images/produse-papetarie/Ilustratie-cu-initiala-numelui/Ilustratie-cu-initiala-numelui-3.jpg",
         price: "120",
+        stars: "5",
         date: "2023-07-25",
         text: "Iustraţie cu iniţiala numelui, pentru decorat camera copilaşului, colţul de joacă sau pentru oferit în dar. Ilustraţia conţine iniţiala şi primul prenume şi poate fi personalizată prin alegerea nuanţelor şi a unui animăluţ, din opţiunile disponibile în ultima imagine." 
       },
@@ -78,6 +83,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Bomboniera-acasa/Bomboniera-acasa-2.jpg",
         imageOption3: "../images/produse-ceramica/Bomboniera-acasa/Bomboniera-acasa-3.jpg",
         price: "65",
+        stars: "5",
         date: "2023-07-26",
         newProducts: "New",
         text: "Bombonieră delicată, zaharniţă elegantă sau pur şi simplu recipient ceramic mititel pentru depozitat mărunţişuri cărora nu le mai găsim locul. Pictată manual cu vopsea pentru ceramice fixată prin coacere la cuptor." 
@@ -90,6 +96,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Canita-linistita/Canita-linistita-2.jpg",
         imageOption3: "../images/produse-ceramica/Canita-linistita/Canita-linistita-3.jpg",
         price: "60",
+        stars: "5",
         date: "2023-07-25",
         text: "Căniţă înaltă, cu formă pătrată, pentru preţuit momentele cu linişte pe dinăuntru. Pictată manual cu vopsea pentru ceramice fixată prin coacere la cuptor."  
       },
@@ -101,6 +108,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Cescuta-buna-dimi/Cescuta-buna-dimi-2.jpg",
         imageOption3: "../images/produse-ceramica/Cescuta-buna-dimi/Cescuta-buna-dimi-3.jpg",
         price: "65",
+        stars: "5",
         date: "2023-07-25",
         text: "Ceşcuţă pentru dimineţi cu avânt şi voie bună. Pictată manual cu vopsea pentru ceramică fixată prin coacere la cuptor."  
       },
@@ -112,6 +120,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Untiera-acasa/Untiera-acasa-2.jpg",
         imageOption3: "../images/produse-ceramica/Untiera-acasa/Untiera-acasa-3.jpg",
         price: "95",
+        stars: "5",
         date: "2023-07-26",
         newProducts: "New",
         text: "Untieră formată din tăviţă şi capac, pentru păstrat untul sau pentru adăpostit tot felul de bunătăţi. Pictată manual cu vopsea pentru ceramică fixată prin coacere la cuptor."  
@@ -124,6 +133,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Setul-de-ceai-acasa/Setul-de-ceai-acasa-2.jpg",
         imageOption3: "../images/produse-ceramica/Setul-de-ceai-acasa/Setul-de-ceai-acasa-3.jpg",
         price: "250",
+        stars: "5",
         date: "2023-07-25",
         text: "Set format din ceainic şi două ceşcuţe cu farfuriuţe, pentru timp petrecut împreună în cel mai frumos loc de pe pământ. Pictată manual cu vopsea pentru ceramică fixată prin coacere la cuptor."  
       },
@@ -137,6 +147,7 @@ let products = {
         price: "120",
         oldPrice: "150",
         sales: "Sale",
+        stars: "5",
         date: "2023-07-25",
         text: "Set format din căniţă şi latieră, pentru cei care ar da oricând un strong espresso pe-un lejer şi spumos latte. Pictată manual cu vopsea pentru ceramică fixată prin coacere la cuptor."  
       },
@@ -148,6 +159,7 @@ let products = {
         imageOption2: "../images/produse-ceramica/Setul-de-ceai-calm/Setul-de-ceai-calm-2.jpg",
         imageOption3: "../images/produse-ceramica/Setul-de-ceai-calm/Setul-de-ceai-calm-3.jpg",
         price: "110",
+        stars: "5",
         date: "2023-07-25",
         text: "Set pentru ceai format din ceainic, ceaşcă şi farfuriuţă, pentru pauza ta de bine şi de calm. Pictată manual cu vopsea pentru ceramică fixată prin coacere la cuptor."  
       },
@@ -159,6 +171,7 @@ let products = {
         imageOption2: "../images/produse-textile/Lenjerie-verde-salvie/Lenjerie-verde-salvie-2.jpg",
         imageOption3: "../images/produse-textile/Lenjerie-verde-salvie/Lenjerie-verde-salvie-3.jpg",
         price: "230",
+        stars: "5",
         date: "2023-07-25",
         text: "Lenjerie verde salvie cu panglici, din bumbac satinat. Cusută cu drag la noi. Setul este compus din cearşaf, husă de pilotă şi huse de pernă cu închidere tip fundiţă din panglici legate. Compoziţie: 100% bumbac ranforce satinat"  
       },
@@ -170,6 +183,7 @@ let products = {
         imageOption2: "../images/produse-textile/Lenjerie-albastru-cer-cu-volanase/Lenjerie-albastru-cer-cu-volanase-2.jpg",
         imageOption3: "../images/produse-textile/Lenjerie-albastru-cer-cu-volanase/Lenjerie-albastru-cer-cu-volanase-3.jpg",
         price: "245",
+        stars: "5",
         date: "2023-07-25",
         text: "Lenjerie albastru cer, cu volănaşe, din bumbac satinat. Cusută cu drag la noi.. Cusută cu drag la noi. Setul este compus din cearşaf, husă de pilotă şi huse de pernă cu închidere tip fundiţă din panglici legate. Compoziţie: 100% bumbac ranforce satinat"  
       },
@@ -181,6 +195,7 @@ let products = {
         imageOption2: "../images/produse-textile/Fata-de-masa-din-in-bej-nisipiu-cu-franjuri/Fata-de-masa-din-in-bej-nisipiu-cu-franjuri-2.jpg",
         imageOption3: "../images/produse-textile/Fata-de-masa-din-in-bej-nisipiu-cu-franjuri/Fata-de-masa-din-in-bej-nisipiu-cu-franjuri-3.jpg",
         price: "180",
+        stars: "5",
         date: "2023-07-25",
         text: "Faţă de masă bej nisipiu din in moale, cu franjuri realizate manual. Cusută cu drag în România. Compoziţie: 100% in prespălat"  
       },
@@ -192,6 +207,7 @@ let products = {
         imageOption2: "../images/produse-textile/Fata-de-masa-din-in-kaki-cu-franjuri/Fata-de-masa-din-in-kaki-cu-franjuri-2.jpg",
         imageOption3: "../images/produse-textile/Fata-de-masa-din-in-kaki-cu-franjuri/Fata-de-masa-din-in-kaki-cu-franjuri-3.jpg",
         price: "180",
+        stars: "5",
         date: "2023-07-25",
         text: "Faţă de masă kaki din in moale, cu franjuri realizate manual. Cusută cu drag în România. Compoziţie: 100% in prespălat"  
       },
@@ -205,6 +221,7 @@ let products = {
         price: "210",
         oldPrice: "250",
         sales: "Sale",
+        stars: "5",
         date: "2023-07-26",
         newProducts: "New",
         text: "Set de naproane kaki, din in moale prespălat, format din un napron lung (traversă de masă) şi 4 naproane tip suport de farfurie. . Cusută cu drag în România. Compoziţie: 100% in prespălat"  
@@ -219,6 +236,7 @@ let products = {
         price: "210",
         oldPrice: "250",
         sales: "Sale",
+        stars: "5",
         date: "2023-07-26",
         newProducts: "New",
         text: "Set de naproane bej nisipiu, din in moale prespălat, format din un napron lung (traversă de masă) şi 4 naproane tip suport de farfurie. Cusută cu drag în România. Compoziţie: 100% in prespălat"  
@@ -1034,12 +1052,19 @@ for (let i of products.data) {
 
 
 
-
-
-
 window.onload = () => {
   let categories = localStorage.getItem("categories");
   if(categories !== null){
+    removeCards();
+    buildCard();
+    sr.reveal('.box', { origin: 'top', interval: 300});
+    sr.reveal('.new-product', { origin: 'right'});
+    sr.reveal('.box .fa-cart-shopping', { origin: 'left'});
+    sr.reveal('.box .fa-heart', { origin: 'top'});
+    sr.reveal('.fa-eye', { origin: 'right'});
+    sr.reveal('.image', { origin: 'left'});
+    sr.reveal('.product-name', { origin: 'right'});
+    sr.reveal('.stars', { origin: 'left'});
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
       if (categories.toUpperCase() == button.innerText.toUpperCase()) {

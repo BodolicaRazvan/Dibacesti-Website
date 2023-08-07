@@ -2,6 +2,17 @@
 document.getElementById("search-navbar").addEventListener("click", () => {
     //initializations
 
+    removeCards();
+    buildCard();
+    sr.reveal('.box', { origin: 'top', interval: 300});
+    sr.reveal('.new-product', { origin: 'right'});
+    sr.reveal('.box .fa-cart-shopping', { origin: 'left'});
+    sr.reveal('.box .fa-heart', { origin: 'top'});
+    sr.reveal('.fa-eye', { origin: 'right'});
+    sr.reveal('.image', { origin: 'left'});
+    sr.reveal('.product-name', { origin: 'right'});
+    sr.reveal('.stars', { origin: 'left'});
+
     let searchInput = document.getElementById("search-input-navbar").value;
     let elements = document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".box");
@@ -31,6 +42,20 @@ document.getElementById("search-navbar").addEventListener("click", () => {
         cards[index].classList.add("hide");
       }
     });
+
+    let k = 0;
+    cards.forEach((card) => {
+      if(card.classList.contains('hide')){
+        k++;
+      }
+    });
+
+    if(k == 19){
+      alert("Nu s-a gasit niciun produs");
+      filterProduct("all");
+    }
+
+    document.getElementById("search-input-navbar").value = '';
 });
   
 
@@ -39,6 +64,17 @@ const elemNavbar = document.getElementById("search-input-navbar");
 elemNavbar.onkeyup = function(e){
     if(e.keyCode == 13){
        
+    removeCards();
+    buildCard();
+    sr.reveal('.box', { origin: 'top', interval: 300});
+    sr.reveal('.new-product', { origin: 'right'});
+    sr.reveal('.box .fa-cart-shopping', { origin: 'left'});
+    sr.reveal('.box .fa-heart', { origin: 'top'});
+    sr.reveal('.fa-eye', { origin: 'right'});
+    sr.reveal('.image', { origin: 'left'});
+    sr.reveal('.product-name', { origin: 'right'});
+    sr.reveal('.stars', { origin: 'left'});
+
     let searchInput = document.getElementById("search-input-navbar").value;
     let elements = document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".box");
@@ -69,5 +105,19 @@ elemNavbar.onkeyup = function(e){
         cards[index].classList.add("hide");
       }
     });
+
+    let k = 0;
+    cards.forEach((card) => {
+      if(card.classList.contains('hide')){
+        k++;
+      }
+    });
+
+    if(k == 19){
+      alert("Nu s-a gasit niciun produs");
+      filterProduct("all");
     }
+
+    document.getElementById("search-input-navbar").value = '';
+  }
 }
