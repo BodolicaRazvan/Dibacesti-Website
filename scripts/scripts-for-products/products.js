@@ -1038,7 +1038,7 @@ for (let i of products.data) {
 
 
 window.onload = () => {
-  const categories = localStorage.getItem("categories");
+  let categories = localStorage.getItem("categories");
   if(categories !== null){
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
@@ -1060,6 +1060,7 @@ window.onload = () => {
         }
       }
     });
+    localStorage.removeItem("categories");
   }else{
   filterProduct("all");
   }

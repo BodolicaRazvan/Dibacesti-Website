@@ -8,8 +8,16 @@ function filterProduct(value) {
         button.classList.remove("active");
       }
     });
-  
-
+    removeCards();
+    buildCard();
+    sr.reveal('.box', { origin: 'top', interval: 300});
+    sr.reveal('.new-product', { origin: 'right'});
+    sr.reveal('.box .fa-cart-shopping', { origin: 'left'});
+    sr.reveal('.box .fa-heart', { origin: 'top'});
+    sr.reveal('.fa-eye', { origin: 'right'});
+    sr.reveal('.image', { origin: 'left'});
+    sr.reveal('.product-name', { origin: 'right'});
+    sr.reveal('.stars', { origin: 'left'});
     let elements = document.querySelectorAll(".box");
     elements.forEach((element) => {
       if (value == "all") {
@@ -23,4 +31,4 @@ function filterProduct(value) {
       }
     });
 
-  }
+}
