@@ -3,14 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/payment.css">
-    <title>In curand</title>
+
+    <!-- Animations links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ------------ -->
+
+    <!-- Icons scripts -->
+    <script src="https://kit.fontawesome.com/e3435d2ddf.js" crossorigin="anonymous"></script>
+    <!-- ------------ -->
+
+    <!-- Scroll-reveal scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ------------ -->
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500;600;700&family=Lugrasimo&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- ------------ -->
+
+    <!-- My Css links -->
+    <link rel="stylesheet" href="../styles/main.css">  
+    <link rel="stylesheet" href="../styles/payment.css">  
+    <!-- ------------ -->
+
+    <title>Despre noi</title>
 </head>
+
 <body>
     
-<div class="coming-soon">
-    <h1>In curand</h1>
+<main>
+
+<header class="sticky">
+
+    <a href="../index.html" class="logo">
+        <p>Dibăceşti</p>
+    </a>
+
+    <nav class="nav-bar">
+        <a href="../index.html">Acasa</a>
+        <a href="#">Despre noi</a>
+        <a href="products.html">Produse</a>
+        <a href="../index.html#menu">Categorii</a>
+        <a href="../index.html#media">Social Media</a>
+        <a href="../index.html#review">De la voi</a>
+        <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <!-- <div id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="shop-btn">
+            <i class="fa-solid fa-regular fa-cart-shopping"></i>
+        </div> -->
+        <div id="account-btn">
+            <i class="fa-solid fa-user" id="form-open"></i>
+        </div>
+        <div id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Cauta produsul dorit...">
+        <label for="search-input" class="fa-solid fa-magnifying-glass"></label>
+    </div>
+
+    <div class="shop-container">
+        <div class="shop-item">
+            <span class="fa-solid fa-x"></span>
+            <img src="../images/textile-photo.jpg" alt="fist-item">
+            <div class="content">
+                <h3>Cos Produsul 1</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="fa-solid fa-x"></span>
+            <img src="../images/ceramica-photo.jpg" alt="second-item">
+            <div class="content">
+                <h3>Cos Produsul 2</h3>
+                <div class="price">$17.99/-</div>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="fa-solid fa-x"></span>
+            <img src="../images/portrete-photo.jpg" alt="third-item">
+            <div class="content">
+                <h3>Cos Produsul 3</h3>
+                <div class="price">$11.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">Mergi la plata</a>
+    </div> -->
+
+    <div class="account-container">
+
+      <div class="form_container">
+        <i class="fa-solid fa-xmark form_close"></i>
+        <div class="form login_form">
+          <form id="form-login">
+            <h2>Contul meu</h2>
+    
+            <div class="input_box">
+              <input type="email" id="email-login" placeholder="Adresa de email" required />
+              <i class="fa-solid fa-envelope email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password-login" placeholder="Parola" required/>
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw_hide"></i>
+            </div>
+    
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" checked/>
+                <label for="check">Tine-ma minte</label>
+              </span>
+              <a href="#" class="forgot_pw">Ai uitat parola?</a>
+            </div>
+    
+            <div class="result-L">
+              <p id="result-login"></p>
+            </div>
+            <button type="submit" class="button" id="login-btn">Intra in cont</button>
+    
+            <div class="login_signup">Nu ai cont? <a href="#" id="signup">Inregistreaza-te</a></div>
+          </form>
+        </div>
+    
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form id="form-singup">
+            <h2>Inregistreaza-te</h2>
+    
+            <div class="input_box">
+              <input type="email" id="email-signup" placeholder="Adresa de email" required />
+              <i class="fa-solid fa-envelope email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password-signup" placeholder="Parola"  required />
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password-repeat-signup" placeholder="Confirma parola" required />
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw_hide"></i>
+            </div>
+    
+            <div class="result-S">
+              <p id="result-signup"></p>
+            </div>
+            <button type="submit" class="button">Creeaza cont</button>
+    
+            <div class="login_signup">Ai deja un cont? <a href="#" id="login">Intra in cont</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+</header>
+
+<section class="inside">
+
+   
+<div class="wrap cf">
+
+  <h1 class="projTitle"></h1>
+
+  <div class="heading cf">
+    <h1>My Cart</h1>
+    <a href="products.html" class="continue">Continuă cumpărăturile</a>
+  </div>
+
+  <div class="cart">
+    <ul class="cartWrap" id="cartWrap">
+
+
+    </ul>
+  </div>
+  
+  <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+      
+          <li class="totalRow"><span class="label">Transport</span><span class="value">$5.00</span></li>
+      
+            <li class="totalRow"><span class="label">Taxe</span><span class="value">$4.00</span></li>
+            <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+      <li class="totalRow"><a href="#" class="btnP continue">Mergi spre plată</a></li>
+    </ul>
+  </div>
+
+  <div class="promoCode"><label for="promo">Foloseste cupon</label><input type="text" name="promo" placholder="Enter Code" />
+    <a href="#" class="btnP"></a>
+  </div>
+
 </div>
 
+</section>
+
+
+<section class="footer">
+
+    <div class="footer-box">
+        <h3>Magazin</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Dibacesti" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/dibacesti/" class="fa-brands fa-instagram"></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Suport</h3>
+        <li><a  id="payments" onclick="saveID(this.id)" href="support.html#inside">Modalitati de plata</a></li>
+        <li><a  id="return" onclick="saveID(this.id)" href="support.html#inside">Politica de retur</a></li>
+        <li><a  id="terms" onclick="saveID(this.id)" href="support.html#inside">Termenii si conditii</a></li>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <li><span class="fa-solid fa-envelope"></span>Romanaia, Bacau</li>
+            <li><span class="fa-solid fa-phone"></span>074357657</li>
+            <li><span class="fa-solid fa-location-dot"></span>dibacesti@shop.com</li>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
 </body>
+
+<!-- Type Animation -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- ------------ -->
+
+<!--My JavaScripts -->
+<script src="../scripts/script-for-main/navbar-icons.js"></script>
+<script src="../scripts/script-for-main/navbar-sticky-effect.js"></script>
+<script src="../scripts/script-for-main/login-signin.js"></script>
+
+<script src="../scripts/scripts-for-products/products.js"></script>
+
+<script src="../scripts/scripts-for-payment/view-cart.js"></script>
+
+<script src="../scripts/script-for-support/accordion-id.js"></script>
+<!-- ------------ -->
+
 </html>
