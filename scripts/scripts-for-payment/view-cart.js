@@ -1,4 +1,6 @@
 let getCartProducts = localStorage.getItem("cart-products-saved");
+let subtotal = 0;
+let subtotalUpdate = 0;
 if(getCartProducts == null){
     console.log('nu avem iteme');
 }else{
@@ -59,11 +61,17 @@ for(let k=0; k<cartProduct.length; k++){
     //price calculator
     let price = document.createElement("p");
     price.innerText = "$" + j.price;
+    subtotal = subtotal + Number(j.price); 
+    document.getElementById("subtotal").innerText = subtotal;
     priceContainer.appendChild(price);
     let priceCalculator = j.price;
     productQuantity.addEventListener("change", function(){
         priceCalculator = j.price * productQuantity.value;
         price.innerText = "$" + priceCalculator;
+        if (productQuantity.value == 2){
+            subtotal = subtotal - Number(j.price) + priceCalculator;
+            document.getElementById("subtotal").innerText = subtotal;
+        } 
     });
 
     //delete
@@ -112,6 +120,26 @@ for(let k=0; k<cartProduct.length; k++){
   }
  } 
 }
+
+
+
+//update total price
+
+// let subtotal = document.getElementById("subtotal");
+// console.log(subtotal.innerText);
+// subtotal.innerText = 
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let getCartProducts1 = localStorage.getItem("cart-products-saved");
 // if(getCartProducts1 == null){
